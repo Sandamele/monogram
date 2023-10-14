@@ -1,0 +1,79 @@
+@use "../../scss/variables" as var;
+.footer {
+    background-color: var.$ultramarineViolet;
+    color: var.$salmonOrange;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    bottom: 0;
+    width: 100%;
+    font-weight: 200;
+    letter-spacing: 0.8px;
+    .header {
+        font-size: 10.8px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+    .list,
+    .links,
+    .socialMedia {
+        font-size: 13px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .links {
+        li {
+            margin: 8px 0;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: var.$salmonOrange;
+        }
+    }
+
+    // Subscribe
+    p {
+        font-size: 12px;
+    }
+    input[type="email"] {
+        width: 200px;
+        font-size: 13px;
+        height: 30px;
+        margin-right: 10px;
+        border-radius: 0;
+        border: 1px solid var.$salmonOrange;
+        color: var.$salmonOrange;
+        background-color: transparent;
+        padding-left: 10px;
+        outline: 0;
+    }
+
+    input[type="submit"] {
+        border-radius: 30px;
+        font-weight: 500;
+        font-size: 12px;
+        height: 30px;
+        width: 100px;
+        text-transform: uppercase;
+        border: none;
+        background-color: var.$salmonOrange;
+        opacity: 0.6;
+    }
+    .socialMedia {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        li {
+            margin: 0 5px;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 5px;
+            background-color: var.$salmonOrange;
+        }
+    }
+}

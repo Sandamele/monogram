@@ -1,0 +1,21 @@
+Features
+    - Search
+        - Search Job title, keywords, or company
+        - Search city, province or postal code
+        - Search button
+    
+    - Job Feed
+        - Job list
+            - Job title
+            - Company Name
+            - Location (City, Province)
+            - Salary, job type
+            - Perks
+            - job short description
+            - date posted
+        - Job Side Quick View
+            - Job title
+            - Company Name
+            - Location, Job type
+            - Salary, Job type
+            - Job description

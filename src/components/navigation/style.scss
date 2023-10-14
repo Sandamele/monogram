@@ -1,0 +1,178 @@
+@use "../../scss/variables.scss" as var;
+.navigation {
+    background-color: var.$ultramarineViolet;
+    color: var.$salmonOrange;
+    margin: 10px 15px;
+    position: fixed;
+    padding: 10px;
+    width: 98%;
+    z-index: 1;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.9);
+    .brand {
+        color: var.$salmonOrange;
+        .brandName {
+            font-size: 45px;
+            text-transform: uppercase;
+        }
+    }
+    .brand:hover {
+        color: var.$darkSalmonOrange;
+        cursor: pointer;
+    }
+    .desktopNavigation {
+        display: flex;
+        list-style-type: none;
+        position: relative;
+        top: 8px;
+        .dropDown {
+            .subNavigation {
+                display: none;
+            }
+            &:hover {
+                .subNavigation {
+                    display: block;
+                }
+                a {
+                    color: var.$pastelWhiteGloveColor;
+                }
+            }
+        }
+    }
+    .currency,
+    .cartNavigation {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 8px;
+        .dropDown {
+            .subNavigation {
+                display: none;
+            }
+            &:hover {
+                .subNavigation {
+                    display: block;
+                }
+                a {
+                    color: var.$pastelWhiteGloveColor;
+                }
+            }
+        }
+    }
+    li {
+        a {
+            padding: 0 15px;
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 1.5px;
+            color: var.$salmonOrange;
+            &:hover {
+                color: var.$darkSalmonOrange;
+            }
+        }
+        .activeLink {
+            font-weight: 500;
+        }
+        .subNavigation {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            background-color: white;
+            border: 1px solid black;
+            padding: 10px 0;
+            li {
+                padding: 5px;
+                a {
+                    color: black !important;
+                }
+                &:hover {
+                    background-color: var.$pastelWhiteGloveColor;
+                }
+            }
+        }
+    }
+    .menu {
+        margin-top: 8px;
+        display: none;
+    }
+}
+
+.mobileNavigation {
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 1;
+    letter-spacing: 0.4px;
+    .brandName {
+        font-size: 45px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .sideNavigation {
+        padding: 20px;
+        background-color: var.$ultramarineViolet;
+        color: var.$salmonOrange;
+        z-index: 1;
+        width: 384px;
+        height: 101vh;
+        ul {
+            margin: 20px;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: var.$salmonOrange;
+            font-size: 22px;
+            font-weight: 200;
+        }
+        ul li {
+            padding: 8px 0;
+
+            ul {
+                margin: 0;
+                padding-left: 30px;
+
+                li {
+                    padding: 10px 0;
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+.mobileNavigation {
+    display: none;
+}
+// Mobile
+@media screen and (max-width: var.$tablet) {
+    .navigation {
+        width: 96%;
+
+        .desktopView {
+            display: none;
+        }
+        .menu {
+            display: block;
+            transition: ease-in-out 1s;
+        }
+    }
+    .mobileNavigation {
+        display: block;
+    }
+
+    .openNav {
+        display: block;
+        transition: width 20s;
+    }
+    .closeNav {
+        display:none;
+    }
+}
+
+@media screen and (max-width: var.$mobileLarge) {
+    .navigation {
+        width: 93%;
+    }
+}
