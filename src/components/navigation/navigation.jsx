@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Brand } from "./brand";
 import { CartNavigation } from "./cart/cartNavigation";
-import { Currency } from "./cart/currency";
 import { DesktopNav } from "./desktop";
 import { MobileNav } from "./mobile";
-import { cartNavlinks, currency, navUrl } from "./navLinks";
+import { cartNavlinks, navUrl } from "./navLinks";
 import "./style.scss";
 export default function Navigation() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -29,7 +28,6 @@ export default function Navigation() {
               <box-icon name="menu" color="#EFC2B2"></box-icon>
             </span>
             <CartNavigation links={cartNavlinks} />
-            <Currency links={currency} />
           </div>
         </div>
       </div>
