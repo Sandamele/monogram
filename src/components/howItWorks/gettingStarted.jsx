@@ -38,7 +38,7 @@ export default function GettingStarted() {
             style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
           >
             <div className="slide">
-              <GettingStartedCard image={imageA}>
+              <GettingStartedCard image={imageA} alt={"imageA"}>
                 <div className="cardA">
                   <h3>Download monogram creator</h3>
                   <div className="row">
@@ -61,7 +61,7 @@ export default function GettingStarted() {
               </GettingStartedCard>
             </div>
             <div className="slide">
-              <GettingStartedCard image={imageB}>
+              <GettingStartedCard image={imageB} alt={"imageB"}>
                 <div className="cardB">
                   <h3>Start Connecting</h3>
                   <p>
@@ -74,7 +74,7 @@ export default function GettingStarted() {
               </GettingStartedCard>
             </div>
             <div className="slide">
-              <GettingStartedCard image={imageF}>
+              <GettingStartedCard image={imageF} alt={"imageF"}>
                 <div className="cardF">
                   <h3>Start Creating</h3>
                   <p>

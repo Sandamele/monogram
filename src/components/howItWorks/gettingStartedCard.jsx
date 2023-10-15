@@ -1,8 +1,8 @@
 import React from 'react'
-export default function GettingStartedCard({children, image}) {
+export default function GettingStartedCard({children, image, alt}) {
   return (
     <div className='gettingStartedCard'>
-        <img src={image} />
+        <img src={image}  alt={alt}/>
         <div className='gettingStartedCardText'>
             <div className='text'>
                 {children}
